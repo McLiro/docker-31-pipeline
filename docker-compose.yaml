@@ -1,4 +1,9 @@
 services:
+  app:
+    image: mcliro/beermapping:latest
+    ports:
+      - "8080:8080"
+
   watchtower:
     image: nickfedor/watchtower
     environment:
